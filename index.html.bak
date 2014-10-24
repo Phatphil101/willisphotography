@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de"><!-- use class="debug" here if you develope a template and want to check-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<!-- photography, willis, photographer, 43213, gantz photographer, gantz park, gantz park photographer"--> 
+    <meta name="description" content="We are Willis photography of grove city 43123" />
+    <meta name="keywords" content="photographer grove city 43123" />
+    <meta name="revisit-after" content="2 days" />
+    <meta name="robots" content="index,follow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>Willis Shots Photography</title>
+	<style type="text/css">
+	html{
+		height:100%;
+	}
+	body{
+		height:100%;
+		color: #000;
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		margin:0px;
+		padding:0px;
+	}
+	.zoomingText{
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		color: #317082;
+	}
+	#zoomingTextContainer{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 24px;
+	top: 4px;
+	text-align: center;
+	}
+	.skipIntro{
+		position:absolute;
+		bottom:10px;
+		right:10px;
+		color:#000000;	
+	}
+	.skipIntro a{
+		color:#000000;
+		font-size:18px;
+		text-decoration:none;
+	}
+
+	</style>
+	<script type="text/javascript">
+	/*
+	(C) www.dhtmlgoodies.com, September 2005
+	
+	You are free to use this script as long as the copyright message is kept intact
+	
+	
+	Alf Magne Kalleland
+	
+	*/	
+	var textArray = ['Welcome','To','Willis','Photography'];
+	
+	var maxFontSize = 50;	// Maximum font size in pixels
+	var zoomSpeed = 7; // Lower = Faster
+	var fontIncrementBy = 1; // Step of font size incrementation ( Higher = faster)
+	var delayBetweenWords = 400;	// Microseconds between each word
+	var delayAtEnd = 300;	// Microseconds delay after last word
+	
+	var textIndex = 0;	// Don't change this value
+	function executeZoomScript()
+	{
+		var obj = document.getElementById('zoomingText');
+		if(textIndex<textArray.length){
+			
+			obj.style.fontSize = '1px';
+			obj.style.lineHeight = document.body.clientHeight + 'px';
+			obj.innerHTML = textArray[textIndex];
+			zoomText();	
+		}else{
+			setTimeout("document.getElementById('zoomingTextContainer').style.display = 'none'",delayAtEnd);
+		}
+	}
+	
+	function zoomText(){
+		var obj = document.getElementById('zoomingText');
+		var fontSize = obj.style.fontSize.replace('px','');
+		fontSize = fontSize/1 + fontIncrementBy;
+		obj.style.fontSize = fontSize + 'px';
+		if(fontSize<maxFontSize){
+			setTimeout('zoomText()',zoomSpeed);
+		}else{
+			textIndex++;
+			setTimeout('executeZoomScript()',delayBetweenWords);
+		}	
+		
+	}
+	window.onload = executeZoomScript;
+	
+	
+	</script>
+</head>
+<body>
+<div id="zoomingTextContainer">
+	<span class="zoomingText" id="zoomingText"></span>
+</div>
+<!-- Counter Code START --><a href="http://www.e-zeeinternet.com/" target="_blank"><img src="http://www.e-zeeinternet.com/count.php?page=937349&style=LED_g&nbdigits=5&reloads=1" alt="Web Counter" border="0" ></a><br><a href="http://www.e-zeeinternet.com/" title="Web Counter" target="_blank" style="font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; text-decoration: none;">Web Counter</a><!-- Counter Code END -->
+<meta http-equiv="REFRESH" content="5;url=http://willisphotography.zxq.net/index2.html"
+</body>
+</HTML>

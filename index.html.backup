@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de"><!-- use class="debug" here if you develope a template and want to check-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<!-- some meta tags, important for SEO"--> 
+    <meta name="description" content="We are Willis photography of grove city 43123" />
+    <meta name="keywords" content="photographer grove city 43123" />
+    <meta name="revisit-after" content="2 days" />
+    <meta name="robots" content="index,follow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<link rel="apple-touch-icon" href="../img/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/touch-icon-iphone4.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../img/touch-icon-ipad2.png">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<script type="text/javascript">
+
+var addToHomeConfig = {
+	message: 'Would you like to add our icon to your <strong>%device</strong>? Tap %icon and add to homes
